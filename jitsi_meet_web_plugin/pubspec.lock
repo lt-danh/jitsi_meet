@@ -68,9 +68,11 @@ packages:
   jitsi_meet_platform_interface:
     dependency: "direct main"
     description:
-      name: jitsi_meet_platform_interface
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: jitsi_meet_platform_interface
+      ref: HEAD
+      resolved-ref: "381e22dcb40b8867ba792ff00f4bf410a45884f1"
+      url: "https://github.com/lt-danh/jitsi_meet.git"
+    source: git
     version: "2.0.0"
   js:
     dependency: "direct main"
