@@ -25,6 +25,19 @@ class FeatureFlag {
   bool? toolboxAlwaysVisible;
   bool? videoShareButtonEnabled;
   bool? welcomePageEnabled;
+  bool? audioFocusDisabled;
+  bool? audioMuteButtonEnabled;
+  bool? audioOnlyButtonEnabled;
+  bool? filmstripEnabled;
+  bool? fullscreenEnabled;
+  bool? helpButtonEnabled;
+  bool? iosScreenSharingEnabled;
+  bool? lobbyModeEnabled;
+  bool? notificationsEnabled;
+  bool? overflowMenuEnabled;
+  bool? securityOptionsEnabled;
+  bool? toolboxEnabled;
+  bool? videoMuteButtonEnabled;
 
   int? get resoulution {
     return _resolution;
@@ -140,6 +153,71 @@ class FeatureFlag {
       featureFlags[FeatureFlagHelper
               .featureFlags[FeatureFlagEnum.WELCOME_PAGE_ENABLED]] =
           welcomePageEnabled;
+
+    if (audioFocusDisabled != null)
+      featureFlags[FeatureFlagHelper
+          .featureFlags[FeatureFlagEnum.AUDIO_FOCUS_DISABLED]] =
+          audioFocusDisabled;
+
+    if (audioMuteButtonEnabled != null)
+      featureFlags[FeatureFlagHelper
+          .featureFlags[FeatureFlagEnum.AUDIO_MUTE_BUTTON_ENABLED]] =
+          audioMuteButtonEnabled;
+
+    if (audioOnlyButtonEnabled != null)
+      featureFlags[FeatureFlagHelper
+          .featureFlags[FeatureFlagEnum.AUDIO_ONLY_BUTTON_ENABLED]] =
+          audioOnlyButtonEnabled;
+
+    if (filmstripEnabled != null)
+      featureFlags[FeatureFlagHelper
+          .featureFlags[FeatureFlagEnum.FILMSTRIP_ENABLED]] =
+          filmstripEnabled;
+
+    if (fullscreenEnabled != null)
+      featureFlags[FeatureFlagHelper
+          .featureFlags[FeatureFlagEnum.FULLSCREEN_ENABLED]] =
+          fullscreenEnabled;
+
+    if (helpButtonEnabled != null)
+      featureFlags[FeatureFlagHelper
+          .featureFlags[FeatureFlagEnum.HELP_BUTTON_ENABLED]] =
+          helpButtonEnabled;
+
+    if (iosScreenSharingEnabled != null)
+      featureFlags[FeatureFlagHelper
+          .featureFlags[FeatureFlagEnum.IOS_SCREENSHARING_ENABLED]] =
+          iosScreenSharingEnabled;
+
+    if (lobbyModeEnabled != null)
+      featureFlags[FeatureFlagHelper
+          .featureFlags[FeatureFlagEnum.LOBBY_MODE_ENABLED]] =
+          lobbyModeEnabled;
+
+    if (notificationsEnabled != null)
+      featureFlags[FeatureFlagHelper
+          .featureFlags[FeatureFlagEnum.NOTIFICATIONS_ENABLED]] =
+          notificationsEnabled;
+
+    if (overflowMenuEnabled != null)
+      featureFlags[FeatureFlagHelper
+          .featureFlags[FeatureFlagEnum.OVERFLOW_MENU_ENABLED]] =
+          overflowMenuEnabled;
+
+    if (securityOptionsEnabled != null)
+      featureFlags[FeatureFlagHelper
+          .featureFlags[FeatureFlagEnum.SECURITY_OPTIONS_ENABLED]] =
+          securityOptionsEnabled;
+
+    if (toolboxEnabled != null)
+      featureFlags[FeatureFlagHelper
+          .featureFlags[FeatureFlagEnum.TOOLBOX_ENABLED]] =
+          toolboxEnabled;
+
+    if (videoMuteButtonEnabled != null)
+      featureFlags[FeatureFlagHelper
+          .featureFlags[FeatureFlagEnum.VIDEO_MUTE_BUTTON_ENABLED]] =
+          videoMuteButtonEnabled;
 
     return featureFlags;
   }

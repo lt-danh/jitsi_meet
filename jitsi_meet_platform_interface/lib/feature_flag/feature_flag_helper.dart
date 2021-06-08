@@ -21,5 +21,19 @@ class FeatureFlagHelper {
     FeatureFlagEnum.TILE_VIEW_ENABLED: 'tile-view.enabled',
     FeatureFlagEnum.TOOLBOX_ALWAYS_VISIBLE: 'toolbox.alwaysVisible',
     FeatureFlagEnum.WELCOME_PAGE_ENABLED: 'welcomepage.enabled',
+
+    FeatureFlagEnum.AUDIO_FOCUS_DISABLED: 'audio-focus.disabled',
+    FeatureFlagEnum.AUDIO_MUTE_BUTTON_ENABLED: 'audio-mute.enabled',
+    FeatureFlagEnum.AUDIO_ONLY_BUTTON_ENABLED: 'audio-only.enabled',
+    FeatureFlagEnum.FILMSTRIP_ENABLED: 'filmstrip.enabled',
+    FeatureFlagEnum.FULLSCREEN_ENABLED: 'fullscreen.enabled',
+    FeatureFlagEnum.HELP_BUTTON_ENABLED: 'help.enabled',
+    FeatureFlagEnum.IOS_SCREENSHARING_ENABLED: 'ios.screensharing.enabled',
+    FeatureFlagEnum.LOBBY_MODE_ENABLED: 'lobby-mode.enabled',
+    FeatureFlagEnum.NOTIFICATIONS_ENABLED: 'notifications.enabled',
+    FeatureFlagEnum.OVERFLOW_MENU_ENABLED: 'overflow-menu.enabled',
+    FeatureFlagEnum.SECURITY_OPTIONS_ENABLED: 'security-options.enabled',
+    FeatureFlagEnum.TOOLBOX_ENABLED: 'toolbox.enabled',
+    FeatureFlagEnum.VIDEO_MUTE_BUTTON_ENABLED: 'video-mute.enabled',
   };
 }

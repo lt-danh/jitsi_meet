@@ -6,7 +6,86 @@ enum FeatureFlagEnum {
   /// Default: enabled (true).
   ADD_PEOPLE_ENABLED,
 
-  /// Flag indicating if calendar integration should be enabled.
+  /**
+   * Flag indicating if the SDK should not require the audio focus.
+   * Used by apps that do not use Jitsi audio.
+   * Default: disabled (false)
+   */
+  AUDIO_FOCUS_DISABLED,
+
+  /**
+   * Flag indicating if the audio mute button should be displayed.
+   * Default: enabled (true).
+   */
+  AUDIO_MUTE_BUTTON_ENABLED,
+
+  /**
+   * Flag indicating that the Audio only button in the overflow menu is enabled.
+   * Default: enabled (true).
+   */
+  AUDIO_ONLY_BUTTON_ENABLED,
+
+  /**
+   * Flag indicating if the filmstrip should be enabled.
+   * Default: enabled (true).
+   */
+  FILMSTRIP_ENABLED,
+
+  /**
+   * Flag indicating if fullscreen (immersive) mode should be enabled.
+   * Default: enabled (true).
+   */
+  FULLSCREEN_ENABLED,
+
+  /**
+   * Flag indicating if the Help button should be enabled.
+   * Default: enabled (true).
+   */
+  HELP_BUTTON_ENABLED,
+
+  /**
+   * Flag indicating if screen sharing should be enabled in iOS.
+   * Default: disabled (false).
+   */
+  IOS_SCREENSHARING_ENABLED,
+
+  /**
+   * Flag indicating if lobby mode button should be enabled.
+   * Default: enabled.
+   */
+  LOBBY_MODE_ENABLED,
+
+  /**
+   * Flag indicating if the notifications should be enabled.
+   * Default: enabled (true).
+   */
+  NOTIFICATIONS_ENABLED,
+
+  /**
+   * Flag indicating if the audio overflow menu button should be displayed.
+   * Default: enabled (true).
+   */
+  OVERFLOW_MENU_ENABLED,
+
+  /**
+   * Flag indicating if the security options button should be enabled.
+   * Default: enabled (true)
+   */
+  SECURITY_OPTIONS_ENABLED,
+
+  /**
+   * Flag indicating if the toolbox should be enabled
+   * Default: enabled.
+   */
+  TOOLBOX_ENABLED,
+
+  /**
+   * Flag indicating if the video mute button should be displayed.
+   * Default: enabled (true).
+   */
+  VIDEO_MUTE_BUTTON_ENABLED,
+
+/// Flag indicating if calendar integration should be enabled.
   /// Default: enabled (true) on Android, auto-detected on iOS.
   CALENDAR_ENABLED,
 
