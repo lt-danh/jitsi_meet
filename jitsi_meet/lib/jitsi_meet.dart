@@ -64,6 +64,10 @@ class JitsiMeet {
         .joinMeeting(options, listener: listener);
   }
 
+  static Future<void> sendEndpointTextMessage(String text) async {
+    await JitsiMeetPlatform.instance.sendEndpointTextMessage(text);
+  }
+
   /// Initializes the event channel. Call when listeners are added
   static _initialize() {
     if (!_hasInitialized) {

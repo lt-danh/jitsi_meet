@@ -69,6 +69,11 @@ class MethodChannelJitsiMeet extends JitsiMeetPlatform {
   }
 
   @override
+  sendEndpointTextMessage(String text) {
+    _channel.invokeMethod('sendEndpointTextMessage', text);
+  }
+
+  @override
   addListener(JitsiMeetingListener jitsiMeetingListener) {
     _listeners.add(jitsiMeetingListener);
     initialize();

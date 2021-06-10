@@ -96,6 +96,10 @@ class JitsiViewController: UIViewController {
         jitsiMeetView?.leave()
     }
     
+    func sendEndpointTextMessage(String text) {
+        jitsiMeetView.sendEndpointTextMessage("", text)
+    }
+    
     fileprivate func cleanUp() {
         jitsiMeetView?.removeFromSuperview()
         jitsiMeetView = nil
