@@ -120,6 +120,9 @@ public class SwiftJitsiMeetPlugin: NSObject, FlutterPlugin, FlutterStreamHandler
 
 
         } else if (call.method == "sendEndpointTextMessage") {
+            self.jitsiViewController = JitsiViewController.init()
+            self.jitsiViewController?.eventSink = eventSink;
+            
             guard let args = call.arguments else {
                 return
             }
@@ -127,7 +130,8 @@ public class SwiftJitsiMeetPlugin: NSObject, FlutterPlugin, FlutterStreamHandler
             if let myArgs = args as? [String: Any]
             {
                 let text = myArgs["text"] as? String
-                self.jitsiViewController?.sendEndpointTextMessage(text);
+                self.jitsiViewController?.text = text;
+                self.jitsiViewController?.sendEndpointTextMessage();
             } else {
                 result(FlutterError.init(code: "400", message: "arguments are null for method: (sendEndpointTextMessage)", details: "arguments are null for method: (sendEndpointTextMessage)"))
             }

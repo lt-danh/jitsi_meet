@@ -18,6 +18,8 @@ class JitsiViewController: UIViewController {
     var token:String? = nil
     var featureFlags: Dictionary<String, Any>? = Dictionary();
     
+    var text:String? = nil
+    
     
     var jistiMeetUserInfo = JitsiMeetUserInfo()
     
@@ -96,8 +98,8 @@ class JitsiViewController: UIViewController {
         jitsiMeetView?.leave()
     }
     
-    func sendEndpointTextMessage(String text) {
-        jitsiMeetView.sendEndpointTextMessage("", text)
+    func sendEndpointTextMessage() {
+        jitsiMeetView.sendEndpointTextMessage("", self.text)
     }
     
     fileprivate func cleanUp() {
