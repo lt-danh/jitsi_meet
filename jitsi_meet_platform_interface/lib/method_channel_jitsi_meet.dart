@@ -70,7 +70,10 @@ class MethodChannelJitsiMeet extends JitsiMeetPlatform {
 
   @override
   sendEndpointTextMessage(String text) {
-    _channel.invokeMethod('sendEndpointTextMessage', text);
+    Map<String, dynamic> _options = {
+      'text': text,
+    };
+    _channel.invokeMethod('sendEndpointTextMessage', _options);
   }
 
   @override
