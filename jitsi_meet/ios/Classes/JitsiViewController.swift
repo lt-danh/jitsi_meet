@@ -99,6 +99,7 @@ class JitsiViewController: UIViewController {
     }
     
     func sendEndpointTextMessage() {
+        print("sendEndpointTextMessage")
         jitsiMeetView?.sendEndpointTextMessage("", self.text)
     }
     
