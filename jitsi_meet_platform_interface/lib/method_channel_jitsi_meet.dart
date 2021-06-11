@@ -133,6 +133,10 @@ class MethodChannelJitsiMeet extends JitsiMeetPlatform {
           if (listener.onConferenceTerminated != null)
             listener.onConferenceTerminated!(message);
           break;
+        case "endpointTextMessageReceived":
+          if (listener.endpointTextMessageReceived != null)
+            listener.endpointTextMessageReceived!(message);
+          break;
       }
     });
   }
@@ -157,6 +161,10 @@ class MethodChannelJitsiMeet extends JitsiMeetPlatform {
 
           // Remove the listener from the map of _perMeetingListeners on terminate
           _perMeetingListeners.remove(listener);
+          break;
+        case "endpointTextMessageReceived":
+          if (listener.endpointTextMessageReceived != null)
+            listener.endpointTextMessageReceived!(message);
           break;
       }
     }

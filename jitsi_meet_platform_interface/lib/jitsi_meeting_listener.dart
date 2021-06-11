@@ -17,6 +17,9 @@ class JitsiMeetingListener {
   final Function(Map<dynamic, dynamic> message)? onPictureInPictureTerminated;
 
   ///
+  final Function(Map<dynamic, dynamic> message)? endpointTextMessageReceived;
+
+  ///
   final Function(dynamic error)? onError;
 
   /// Generic listeners List for allowed listeners on web
@@ -29,6 +32,7 @@ class JitsiMeetingListener {
       this.onConferenceTerminated,
       this.onPictureInPictureTerminated,
       this.onPictureInPictureWillEnter,
+        this.endpointTextMessageReceived,
       this.onError,
       this.genericListeners});
 }

@@ -157,5 +157,12 @@ extension JitsiViewController: JitsiMeetViewDelegate {
         mutatedData = ["event":"onPictureInPictureTerminated"]
         self.eventSink?(mutatedData)
     }
+    
+    func endpointTextMessageReceived() {
+        //        print("endpointTextMessageReceived")
+        var mutatedData : [AnyHashable : Any]
+        mutatedData = ["event":"endpointTextMessageReceived"]
+        self.eventSink?(mutatedData)
+    }
 }
 
