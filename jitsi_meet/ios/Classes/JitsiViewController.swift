@@ -160,8 +160,8 @@ extension JitsiViewController: JitsiMeetViewDelegate {
     
     func endpointTextMessageReceived() {
         //        print("endpointTextMessageReceived")
-        var mutatedData : [AnyHashable : Any]
-        mutatedData = ["event":"endpointTextMessageReceived"]
+        var mutatedData = data
+        mutatedData?.updateValue("endpointTextMessageReceived", forKey: "event")
         self.eventSink?(mutatedData)
     }
 }
